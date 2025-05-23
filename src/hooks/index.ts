@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-const SERVER_URL = 'http://localhost:8000';
+const SERVER_URL = 'https://united-joell-brproject-9bcfc6e6.koyeb.app';
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
 export interface GeneralState {
@@ -43,6 +43,7 @@ export const useBookCollection = () => {
     const onBookCollection = async (_data: BookCollection) => {
         setBookState({ ...bookState, isLoading: true });
         try {
+            // https://united-joell-brproject-9bcfc6e6.koyeb.app/manufacturer/upu-products
             const response = await axios.post(`${SERVER_URL}/api/v1/upu/book`, {
                 ..._data,
             });
