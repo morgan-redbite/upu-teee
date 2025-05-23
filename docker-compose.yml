@@ -18,8 +18,8 @@ services:
     build:
       context: .
       target: builder
-    image: webapp_
-    container_name: webapp_
+    image: my-app-builder
+    container_name: my-app-builder
     # intermediate build only—no ports
 
   prod:

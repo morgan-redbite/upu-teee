@@ -11,20 +11,20 @@ export const EstimateStep = ({
     return (
         <>
             {bookState.isLoading && (
-                <div className="flex justify-center items-center px-5">
+                <div className="flex flex-col justify-center items-center px-5">
                     <div className="bg-white">
                         <h2 className="text-xl font-semibold mb-4">Estimating Price...</h2>
                         <p className="text-gray-600">Please wait while we calculate the estimated price for your collection.</p>
                         {/* video in public/videos */}
                     </div>
                     <video
-                            className="w-full h-auto mt-4 w-[200px]"
-                            src="/videos/estimating.mp4"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                        >
+                        className="w-full h-auto mt-4 w-[150px]"
+                        src="/videos/estimating.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                    >
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -33,7 +33,7 @@ export const EstimateStep = ({
                 <div className="flex justify-center items-center px-5">
                     <div className="bg-white">
                         <h2 className="text-xl font-semibold mb-4">Estimated Price</h2>
-                        <p className="text-gray-600">The estimated price for your collection is ${collectionData?.estimatedPrice || 0}</p>
+                        <p className="text-gray-600">The estimated reimbursement for your product is ${collectionData?.estimatedPrice || 0}</p>
                     </div>
                 </div>
             )}
