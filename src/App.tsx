@@ -8,7 +8,7 @@ import { MantineProvider } from '@mantine/core';
 
 function App() {
   return (
-    <div className="min-h-screen bg-stone-50 font-sans">
+    <div className="min-h-screen bg-stone-50 font-sans flex justify-center items-center">
       <MantineProvider>
         <Layout>
           <Header />

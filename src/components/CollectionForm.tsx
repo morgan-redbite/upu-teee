@@ -58,16 +58,16 @@ const CollectionForm: React.FC = () => {
     close();
   }
   const products = [
-    'Smartphone',
-    'Laptop',
-    'Desktop Computer',
-    'Tablet',
-    'Monitor',
-    'Printer',
-    'Television',
-    'Gaming Console',
-    'Audio Equipment',
-    'Small Electronics'
+    'iPhone 15',
+    'iPhone 15 Pro',
+    'iPhone 15 Pro Max',
+    'iPhone 16',
+    'iPhone 16 Pro',
+    'MacBook Air (M2)',
+    'MacBook Pro (M2)',
+    'MacBook Pro (M3)',
+    'MSI Stealth 14',
+    'Lenovo Legion 5',
   ];
 
   return (
